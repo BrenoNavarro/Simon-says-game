@@ -60,6 +60,13 @@
         -webkit-mask-image: radial-gradient(circle at top right, transparent 0, transparent 20%, black 41px);
     }
     
+    .blue,
+    .yellow,
+    .green,
+    .red:hover {
+        cursor: pointer;
+    }
+    
     .selected {
         opacity: 0.5;
     }
