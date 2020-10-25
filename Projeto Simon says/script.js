@@ -58,7 +58,7 @@ let checkOrder = () => {
             document.getElementById("High").innerHTML = highscore;
             flag = true;
         };
-        alert(`Pontuação: ${score}\nPontuação mais alta: ${highscore}\nVocê acertou! Iniciando próximo nível!`);
+        alert('Você acertou!\nIniciando próximo nível!');
         nextLevel();
     }
 }
@@ -95,10 +95,10 @@ let nextLevel = () => {
 // Função de perdedor
 let gameOver = () => {
     if (flag === true) {
-        alert(`Pontuação: ${score}\nPontuação mais alta: ${highscore}\nVocê perdeu, mas parabéns, bateu o recorde!\nClique em ok para iniciar um novo jogo!`);
+        alert('Você perdeu, mas parabéns, bateu o recorde!\nClique em ok para iniciar um novo jogo!');
         flag = false;
     } else {
-        alert(`Pontuação: ${score}\nPontuação mais alta: ${highscore}\nVocê perdeu!\nClique em ok para iniciar um novo jogo!`);
+        alert('Você perdeu!\nClique em ok para iniciar um novo jogo!');
     }
     order = [];
     clickedOrder = [];
