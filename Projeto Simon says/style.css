@@ -1,0 +1,89 @@
+    header .cabecalho {
+        color: white;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1%;
+        height: fit-content;
+    }
+    
+    body {
+        margin: 0;
+        background-color: black;
+    }
+    
+    .main-game {
+        height: 90%;
+        width: 90%;
+        padding-left: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .genius {
+        display: grid;
+        grid-template-areas: 'verde vermelho' 'amarelo azul';
+        grid-gap: 10px;
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 100%;
+        width: 600px;
+        height: 600px;
+    }
+    
+    .blue {
+        grid-area: azul;
+        background-color: blue;
+        border-bottom-right-radius: 100%;
+        -webkit-mask-image: radial-gradient(circle at top left, transparent 0, transparent 20%, black 41px);
+    }
+    
+    .red {
+        grid-area: vermelho;
+        background-color: red;
+        border-top-right-radius: 100%;
+        -webkit-mask-image: radial-gradient(circle at bottom left, transparent 0, transparent 20%, black 41px);
+    }
+    
+    .green {
+        grid-area: verde;
+        background-color: green;
+        border-top-left-radius: 100%;
+        -webkit-mask-image: radial-gradient(circle at bottom right, transparent 0, transparent 20%, black 41px);
+    }
+    
+    .yellow {
+        grid-area: amarelo;
+        background-color: yellow;
+        border-bottom-left-radius: 100%;
+        -webkit-mask-image: radial-gradient(circle at top right, transparent 0, transparent 20%, black 41px);
+    }
+    
+    .selected {
+        opacity: 0.5;
+    }
+    
+    .resultado {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        color: rgb(255, 102, 0);
+    }
+    
+    #Score {
+        margin-left: 1%;
+        padding: 0;
+    }
+    
+    .maior {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        color: rgb(255, 102, 0);
+    }
+    
+    #High {
+        margin-left: 1%;
+        padding: 0;
+    }
